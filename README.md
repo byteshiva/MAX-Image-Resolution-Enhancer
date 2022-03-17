@@ -196,3 +196,16 @@ The network attempts to recognize elements in the low-resolution image from whic
 ## Resources and Contributions
    
 If you are interested in contributing to the Model Asset Exchange project or have any queries, please follow the instructions [here](https://github.com/CODAIT/max-central-repo).
+
+Additional notes
+
+```
+➜  ~ kubectl get services                                                                                                  
+NAME                            TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+max-image-resolution-enhancer   NodePort       10.110.33.111   <none>        5000:32529/TCP   20m
+
+➜  ~ kubectl port-forward svc/max-image-resolution-enhancer 5050:5000
+Forwarding from 127.0.0.1:5050 -> 5000
+Forwarding from [::1]:5050 -> 5000
+
+```
